@@ -52,7 +52,8 @@ h2 {
     justify-content: space-between;
     align-items: center;
     &-text {
-        flex: 0 0 40%;
+        flex: 0 0 42%;
+        padding-top: 18px;
         &__description {
             font-size: 1.12rem;
             line-height: 1.51;
@@ -60,4 +61,19 @@ h2 {
             margin-bottom: 4.81rem;
         }
     }
+    &-visual {
+        border: 1px solid rgba($gray, $alpha);
+        border-radius: 100%;
+        padding: 53px;
+    &__image {
+        border: 1px solid rgba($gray, $alpha);
+        border-radius: 100%;
+        padding: 21px;
+    }
+    &__img {
+        width: 500px;
+        border-radius: 100%;
+        box-shadow: 30px 54px 48px -28px rgba(39,48,15,0.4);
+    }
+  }
 }
