@@ -46,6 +46,32 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 100px;
+    position: relative;
+    &__image {
+        position: absolute;
+    }
+    &__tomato {
+        right: 5px;
+        bottom: 22px;
+    }
+    &__pepper {
+        left: 10px;
+        bottom: 355px;
+    }
+    &__avocado {
+        width: 140px;
+        right: 5px;
+        top: 112px;
+    }
+    &__cucumber {
+        left: 512px;
+        top: 0;
+    }
+    &__beans {
+        left: 0px;
+        bottom: 15px;
+    }
 }
 .main {
     display: flex;
@@ -62,6 +88,7 @@ h2 {
         }
     }
     &-visual {
+        position: relative;
         border: 1px solid rgba($gray, $alpha);
         border-radius: 100%;
         padding: 53px;
@@ -74,6 +101,59 @@ h2 {
         width: 500px;
         border-radius: 100%;
         box-shadow: 30px 54px 48px -28px rgba(39,48,15,0.4);
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        color: rgba ($gray, 0.7);
+        text-align: left;
+        position: absolute;
+        span {
+            color: rgba ($gray, 1);
+            display: block;
+            margin-top: 3px;
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 11px;
+            height: 11px;
+            border-radius: 100%;
+            background-color: $gray;
+            box-shadow: 0 0 0 4px $white, 0 0 0 5px $gray;
+            position: absolute;
+        }
+        &:focus {
+            outline: none;
+            &::before {
+                background-color: $orange;
+                box-shadow: 0 0 0 4px $white, 0 0 0 5px $orange;
+            }
+        }
+    }
+    &__01 {
+        left: 47px;
+        top: 33px;
+        &::before {
+            left: 80px;
+            top: 22px;
+        }
+    }
+    &__02 {
+        right: -10px;
+        top: 165px;
+        &::before {
+            right: 95px;
+            top: 17px;
+        }
+    }
+    &__03 {
+        right: 203px;
+        bottom: -42px;
+        &::before {
+            right: 37px;
+            bottom: 46px;
+        }
     }
   }
 }
