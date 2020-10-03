@@ -1,7 +1,10 @@
 .footer {
     border-top: 1px solid $gray;
     padding-top: 77px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    @media (max-width:1440px) {
+        padding-bottom: 25px;
+    }  
     .logo {
         width: 179px;
         height: 48px;
@@ -14,6 +17,9 @@
         display: flex;
         justify-content: space-between;
         flex: 0 0 66.4%;
+        @media (max-width:1200px) {
+            flex: 0 0 74%;
+        }
     }
 }
 .box-footer-list {

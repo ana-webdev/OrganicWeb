@@ -37,13 +37,14 @@
                 <div class="main-text">
                     <h1 class="title">Здоровая еда - <br><span>это просто</span>!</h1>
                     <div class="ml">
-                        <p class="main-text__description">Сеть магазинов полезных продуктов питания, производство которых основано на принципах<br>и&nbsp;стандартах органического чистых продуктов</p>
+                        <p class="main-text__description">Сеть магазинов полезных продуктов питания, производство которых основано на принципах и&nbsp;стандартах органического чистых продуктов</p>
+                        <img class="main-text__image" src="../img/image-main.png" alt="">
                         <a class="btn" href="">Перейти в каталог</a>     
                     </div>
                 </div>
                 <div class="main-visual">
                     <div class="main-visual__image">
-                    <img class="main-visual__img" src="../img/image-main.png" alt="">                        
+                        <img class="main-visual__img" src="../img/image-main.png" alt="">                        
                     </div>
                     <button class="main-visual__btn main-visual__01">
                         Авокадо<span>134 руб</span>
@@ -500,10 +501,12 @@
                 slidesToScroll: 1,
                 responsive: [
                     {
-                    breakpoint: 600,
+                    breakpoint: 1200,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        arrows: false,
+                        dots: true
                     }
                     },
                     {
